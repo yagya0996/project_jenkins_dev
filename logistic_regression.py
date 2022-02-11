@@ -41,6 +41,6 @@ y_pred = best_model.predict(X)
 
 df = pd.DataFrame({'y_actual':y,'y_pred':y_pred})
 
-df.to_csv('~/output/output.csv', index=False)
+df.to_csv('/output/output.csv', index=False)
 
 
