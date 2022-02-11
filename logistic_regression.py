@@ -13,7 +13,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import StratifiedKFold
 
 
-df = pd.read_csv('Sonar.csv')
+df = pd.read_csv('/data/Sonar.csv')
 
 df_dummy = pd.get_dummies(df,drop_first=True)
 
