@@ -36,16 +36,11 @@ print(cv.best_params_)
 print(cv.best_score_)
 print(cv.best_estimator_)
 
+best_model = cv.best_estimator_
+y_pred = best_model.predict(X)
+
+df = pd.DataFrame({'y_actual':y,'y_pred':y_pred})
+
+df.to_csv('~/output/output.csv', index=False)
 
 
-"""
-{'penalty': 'l2', 'random_state': 2021, 'solver': 'newton-cg'}
-0.849218847514042
-LogisticRegression(random_state=2021, solver='newton-cg')
-"""
-
-"""
-{'C': 1.667625, 'penalty': 'l2', 'random_state': 2021, 'solver': 'saga'}
-0.8505533596837944
-LogisticRegression(C=1.667625, random_state=2021, solver='saga')
-"""
