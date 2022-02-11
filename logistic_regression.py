@@ -24,7 +24,7 @@ y = df_dummy['Class_R']
 kfold = StratifiedKFold(n_splits=5, random_state=2021,shuffle=True)
 
 
-parameters = {'penalty':['l1', 'l2', 'elasticnet', 'none'],'solver':['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga'],'random_state':[2021],'C':np.linspace(0.001,40,25)}
+parameters = {'penalty':['l1', 'l2', 'elasticnet', 'none'],'solver':['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga'],'random_state':[2021],'C':np.linspace(0.01,2,5)}
 
 logreg = LogisticRegression()
 
